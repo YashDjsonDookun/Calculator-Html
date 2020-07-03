@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #4a3b11cc;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+}
+
+.wrapper{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    height: 75vh;
+    width: 55vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-family: monospace;
+}
+
+.screen{
+    background-color: #212121;
+    height: 16vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.controls {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.controls-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls-top-left>div {
+    background-color: #191919eb;
+    width: 14vh;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls-bottom>div{
+    background-color: #191919eb;
+    display: flex;
+}
+.controls-top-right>div{
+    background-color:  #1f1e1eb5;
+    width: 13vh;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls-top-right>div:hover,
+.controls-bottom-left>div:hover,
+.controls-top-left>div:hover,
+.controls-bottom-left>div:hover,
+#equal-btn:hover {
+    background-color: #251616eb !important;
+    cursor: pointer !important;
+}
+
+.controls-top-left {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.controls-bottom-left>div {
+    width: 14vh;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#equal-btn{
+    background-color: #f36d0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 41vh;
+}
+
+.bottom-screen, .top-screen {
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    overflow: hidden;
+}
+
+.top-screen{
+    font-size: 1.7rem;
+}
+
+.operator-clicked {
+    background-color: red !important;
+}
